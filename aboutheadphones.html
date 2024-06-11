@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Headphones</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 800px;
+        background-color: gray;
+        background-position: center;
+        position: relative;
+        background-size: cover;
+        padding-top: 30px;
+        box-sizing: border-box;
+      }
+
+      .msg {
+        width: 600px;
+        height: 280px;
+        position: absolute;
+        left: 14%;
+        top: 57%;
+        transform: translateY(-50%);
+        overflow: hidden;
+      }
+
+      #slider {
+        display: inline-flex;
+        transition: 0.4s;
+      }
+
+      .msgcol {
+        width: 600px;
+        height: 280px;
+      }
+
+      .msgcol h2 {
+        color: black;
+        font-size: 50px;
+        font-weight: 100;
+        margin: 10px 0;
+      }
+
+      .msgcol p {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      .controller {
+        width: 1px;
+        height: 320px;
+        display: block;
+        background: #c0c0c0;
+        position: absolute;
+        top: 55%;
+        right: 50px;
+        transform: translateY(-50%);
+      }
+
+      #lin1,
+      #lin2,
+      #lin3,
+      #lin4 {
+        height: 80px;
+        width: 10px;
+        cursor: pointer;
+        transform: translateX(-50%);
+        background: black;
+      }
+
+      #active {
+        width: 5px;
+        height: 80px;
+        border-radius: 10px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="msg">
+        <div id="slider">
+          <div class="msgcol">
+            <h2>Types of Headphones</h2>
+            <p>
+              Headphones are a pair of small loudspeaker drivers worn on or
+              around the head over a user's ears.Headphones let a single user
+              listen to an audio source privately, in contrast to a loudspeaker,
+              which emits sound into the open air for anyone nearby to hear.
+              Headphones are also known as earphones or, colloquially, cans.
+              Circumaural (around the ear) and supra-aural (over the ear)
+              headphones use a band over the top of the head to hold the drivers
+              in place. Another type, known as earbuds or earpieces, consists of
+              individual units that plug into the user's ear canal. A third type
+              are bone conduction headphones, which typically wrap around the
+              back of the head and rest in front of the ear canal, leaving the
+              ear canal open.
+            </p>
+          </div>
+
+          <div class="msgcol">
+            <h2>How are Headphones connected</h2>
+            <p>
+              Headphones connect to a signal source such as an audio amplifier,
+              radio, CD player, portable media player, mobile phone, video game
+              console, or electronic musical instrument, either directly using a
+              cord, or using wireless technology such as Bluetooth, DECT or FM
+              radio. The first headphones were developed in the late 19th
+              century for use by switchboard operators, to keep their hands
+              free. Initially, the audio quality was mediocre and a step forward
+              was the invention of high fidelity headphones.
+            </p>
+          </div>
+
+          <div class="msgcol">
+            <h2>Professional Headphones</h2>
+            <p>
+              In the professional audio sector, headphones are used in live
+              situations by disc jockeys with a DJ mixer, and sound engineers
+              for monitoring signal sources. In radio studios, DJs use a pair of
+              headphones when talking to the microphone while the speakers are
+              turned off to eliminate acoustic feedback while monitoring their
+              own voice. In studio recordings, musicians and singers use
+              headphones to play or sing along to a backing track or band. In
+              military applications, audio signals of many varieties are
+              monitored using headphones.
+            </p>
+          </div>
+
+          <div class="msgcol">
+            <h2>Supra-aural Headphones</h2>
+            <p>
+              Supra-aural style headphones are historically the most commonly
+              used in audiology as they are the easiest to calibrate and were
+              considered the standard for many years. Commonly used models are
+              the Telephonics Dynamic Headphone (TDH). In-the-ear or insert
+              style earphones are used more commonly today as they provide
+              higher levels of interaural attenuation, introduce less
+              variability when testing 6,000 and 8,000 Hz, and avoid testing
+              issues resulting from collapsed ear canals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controller">
+      <div id="lin1"></div>
+      <div id="lin2"></div>
+      <div id="lin3"></div>
+      <div id="lin4"></div>
+      <div id="active"></div>
+    </div>
+
+    <script>
+      var slider = document.getElementById("slider");
+      var active = document.getElementById("active");
+      var lin1 = document.getElementById("lin1");
+      var lin2 = document.getElementById("lin2");
+      var lin3 = document.getElementById("lin3");
+      var lin4 = document.getElementById("lin4");
+
+      lin1.onclick = function () {
+        slider.style.transform = "translateX(0)";
+        active.style.top = "0px";
+      };
+      lin2.onclick = function () {
+        slider.style.transform = "translateX(-25%)";
+        active.style.top = "80px";
+      };
+      lin3.onclick = function () {
+        slider.style.transform = "translateX(-50%)";
+        active.style.top = "160px";
+      };
+      lin4.onclick = function () {
+        slider.style.transform = "translateX(-75%)";
+        active.style.top = "240px";
+      };
+    </script>
+  </body>
+</html>
