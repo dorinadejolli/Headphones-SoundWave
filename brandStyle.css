@@ -1,0 +1,54 @@
+.brands-container {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .card-brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+  }
+  .brand-card {
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+  }
+  /* .brand-card :hover {
+    transform: translateY(-20px);
+  } */
+  .brand-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .brand-card-content {
+    padding: 20px;
+  }
+  .brand-card-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .brand-card-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .brand-card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .brand-card-button:hover {
+    background-color: gray;
+  }

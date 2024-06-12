@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.card :hover{
+    transform: translateY(-20px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h1{
+    font-size: 24px;
+    margin-bottom:  10px;
+}
+.card-content p{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card-button:hover {
+    background-color: gray;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: rgb(166, 34, 34);
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.card :hover{
+    transform: translateY(-20px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h1{
+    font-size: 24px;
+    margin-bottom:  10px;
+}
+.card-content p{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card-button:hover {
+    background-color: gray;
+}
